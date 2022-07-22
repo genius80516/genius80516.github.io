@@ -6,19 +6,60 @@
 
     <title>background</title>
     <style>
+
+
+        /*通用選擇器"*"*/
+        *{color: brown;}
+        
+        h1,h2,h3,h4,h5,h6{
+        font-family: 'Note Sans TC , sans-serif';
+        color: mediumspringgreen;
+        }
+
+        p,a,span,li,table{
+        font-family: 'Open Sans , sans-serif';
+        color: brown;
+        }
+
+
+
         .emText{color: red;}
         .linda{color: aqua;}
         .mary{color: chocolate;}
         .paul{color: black;}
+        #latest{color: blue;}
+
+
+        div{color: black;}
+        div[title]{color: brown;}
+        div[title=fishbecat]{color: chartreuse;}
+        div[title~=fishbecat、s]{color: blue;}
+        
     </style>
 
 </head>
 <body>
+
+
+
+        <li><span>
+            <a href="portfolio.html" target="_blank">See my portfolio</a>
+        </span></li>
+        <h1>See my portfolio</h1>
+
         <p class = "emText">★★★★★★</p>
         <!--做靠近class的為優先-->
         <p class = "linda">★★★★★</p>
         <p class = "mary">★★★★★</p>
         <p class = "paul">★★★★★</p>
+        <!--id是唯一,class可以多個-->
+        <p id = "latest">★★★★★</p>
+
+        <div>黑色</div>
+        <div title="blog">紅色</div>
+        <div title="fishbecat">綠色</div>
+        <div title="fishbecat、s">藍色</div>
+
 
 </body>
 </html>
